@@ -49,7 +49,7 @@ public class Cart extends ChromeRunner {
         $(byClassName("counter-number")).getText().equals("0");
         $(byClassName("showcart")).click();
 
-        Selenide.sleep(500);
+        Selenide.sleep(1000);
         Assert.assertTrue($(byText("კალათა ცარიელია")).isDisplayed());
     }
 
